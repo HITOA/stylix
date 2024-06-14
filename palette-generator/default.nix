@@ -1,6 +1,6 @@
 { buildNpmPackage, lib, ... }:
 buildNpmPackage rec {
-  #npmDepsHash = "sha256-dVv/s9vPOjCLCsS5Q73PDKN4pvSSFgJCxrub2uiKaSA=";
+  npmDepsHash = "sha256-y8JNznO3f/3dgYFaiBMqprkvw3qAd0KXQqQxklCs+zM=";
   pname = "palette-generator";
   version = "1.0.0";
 
