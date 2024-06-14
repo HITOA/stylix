@@ -9,6 +9,6 @@ pkgs.stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/bin
-    cp $src/palette-generator $out/bin
+    cp palette-generator $out/bin
   '';
 }
