@@ -1,10 +1,14 @@
-{ buildNpmPackage, lib, ... }:
-buildNpmPackage rec {
-  npmDepsHash = "sha256-y8JNznO3f/3dgYFaiBMqprkvw3qAd0KXQqQxklCs+zM=";
-  pname = "palette-generator";
-  version = "1.0.0";
-
+{ pkgs }:
+pkgs.stdenv.mkDerivation {
+  name = "palette-generator";
   src = ./src;
 
-  dontFixup = true;
+  buildPhase = ''
+    g++ main.cpp -o palette-generator
+  '';
+
+  installPhase = ''
+    mkdir -p $out/bin
+    cp $src/palette-generator $out/bin
+  '';
 }
