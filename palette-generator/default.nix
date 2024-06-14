@@ -2,5 +2,5 @@
 buildNpmPackage rec {
   pname = "palette-generator";
 
-  src = ./src
+  src = ./src;
 };
