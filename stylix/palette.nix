@@ -8,8 +8,8 @@ let
 
   paletteJSON = let
     generatedJSON = pkgs.runCommand "palette.json" { } ''
-      node \
-      ${palette-generator}/lib/node_modules/palette-generator/main.js \
+    
+        ${palette-generator}/bin/palette-generator \
         "${cfg.polarity}" \
         ${lib.escapeShellArg "${cfg.image}"} \
         "$out"
