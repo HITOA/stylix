@@ -6,7 +6,7 @@ int main(int argc, char* argv[]) {
         printf("%s\n", argv[i]);
     
     std::ofstream palette{};
-    palette.open("palette.json");
+    palette.open(argv[argc - 1]);
     palette << R"SS(
     {
         base00: "000000",
