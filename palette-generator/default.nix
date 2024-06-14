@@ -9,4 +9,5 @@ buildNpmPackage rec {
   src = ./src;
 
   dontFixup = true;
+  dontNpmBuild = true;
 }
