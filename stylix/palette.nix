@@ -8,7 +8,6 @@ let
 
   paletteJSON = let
     generatedJSON = pkgs.runCommand "palette.json" { } ''
-    
         ${palette-generator}/bin/palette-generator \
         "${cfg.polarity}" \
         ${lib.escapeShellArg "${cfg.image}"} \

@@ -9,22 +9,22 @@ int main(int argc, char* argv[]) {
     palette.open(argv[argc - 1]);
     palette << R"SS(
     {
-        "base00": "000000",
-        "base01": "000000",
-        "base02": "000000",
-        "base03": "000000",
-        "base04": "000000",
-        "base05": "000000",
-        "base06": "000000",
-        "base07": "000000",
-        "base08": "000000",
-        "base09": "000000",
-        "base0A": "000000",
-        "base0B": "000000",
-        "base0C": "000000",
-        "base0D": "000000",
-        "base0E": "000000",
-        "base0F": "000000"
+        "base00": "1e1e2e"
+        "base01": "181825"
+        "base02": "313244"
+        "base03": "45475a"
+        "base04": "585b70"
+        "base05": "cdd6f4"
+        "base06": "f5e0dc"
+        "base07": "b4befe"
+        "base08": "f38ba8"
+        "base09": "fab387"
+        "base0A": "f9e2af"
+        "base0B": "a6e3a1"
+        "base0C": "94e2d5"
+        "base0D": "89b4fa"
+        "base0E": "cba6f7"
+        "base0F": "f2cdcd"
     }
     )SS";
     palette.close();
