@@ -6,4 +6,6 @@ buildNpmPackage rec {
   forceEmptyCache = true;
 
   src = ./src;
+
+  dontFixup = true;
 }
