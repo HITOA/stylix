@@ -9,9 +9,8 @@ let
   paletteJSON = let
     generatedJSON = pkgs.runCommand "palette.json" { } ''
         ${palette-generator}/bin/palette-generator \
-        "${cfg.polarity}" \
-        ${lib.escapeShellArg "${cfg.image}"} \
-        "$out"
+        -i ${lib.escapeShellArg "${cfg.image}"} \
+        --json "$out"
     '';
     palette = importJSON generatedJSON;
     scheme = base16.mkSchemeAttrs palette;
