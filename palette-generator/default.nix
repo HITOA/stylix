@@ -1,14 +1,7 @@
-{ pkgs, lib, palette-generator-src }:
-let
-  palette-generator-src = {
-    inherit (inputs)
-      palette-generator-src
-      ;
-  };
-in
+{ pkgs, lib, inputs }:
 pkgs.stdenv.mkDerivation {
   name = "palette-generator";
-  src = palette-generator-src;
+  src = inputs.palette-generator-src;
 
   buildPhase = ''
     g++ main.cpp -o palette-generator
