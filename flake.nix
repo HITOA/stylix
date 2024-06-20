@@ -77,7 +77,7 @@
 
           universalPackages = {
             docs = import ./docs { inherit pkgs inputs lib; };
-            palette-generator = pkgs.callPackage ./palette-generator { inherit inputs };
+            palette-generator = pkgs.callPackage ./palette-generator { inherit inputs; };
           };
 
           # Testbeds are virtual machines based on NixOS, therefore they are
