@@ -32,6 +32,11 @@
 
     base16.url = "github:SenchoPens/base16.nix";
 
+    palette-generator-src = {
+      flake = false;
+      url = "github:HITOA/image2palette";
+    };
+
     flake-compat = {
       flake = false;
       url = "github:edolstra/flake-compat";
